@@ -1,5 +1,4 @@
-# Requisitos: Desarrollar estos dos puntos a lo largo de las 2 horas de clase
-# 1. Recordando la estructura de las clases como lo es para la clase (DatabaseConnection)
+# Recordando la estructura de las clases como lo es para la clase (DatabaseConnection)
 
 # Herencia: Es un principio de la programación orientada a objetos (POO) que permite crear nuevas clases basadas en clases existentes, 
 #           heredando sus atributos y métodos.
@@ -71,6 +70,7 @@ class PostgresConnection(DatabaseConnection):
         print(f"Connected to PostgreSQL database: {self.db_name}")
         
 #Cada una de los métodos que tiene DatabaseConnection, los puede usar SQLiteConnection y PostgresConnection
+
 
 # Ahora llevemoslo al mundo real, necesitamos un manejador de archivos que pidió un cliente para su uso personal, por ende se debe crear un clase que cumpla las necesidades
 # del cliente:
