@@ -2,6 +2,8 @@ import os
 import shutil
 
 class FolderManager:
+    
+    
     def __init__(self, base_path):
         self.base_path = base_path
         if not os.path.exists(base_path):
@@ -48,3 +50,11 @@ fm = FolderManager("C:/temp/proyecto")   # Crea la base si no existe
 fm.create_folder("datos")                # Crea C:/temp/proyecto/datos
 fm.list_folders()                        # Muestra las carpetas dentro de la base
 fm.delete_folder_empty("datos")          # Borra 'datos' (debe estar vacía)
+
+
+class Persona:
+    specie = "Human"   # atributo de clase
+
+    def __init__(self, name, age):
+        self.name = name      # atributo de instancia
+        self.age = age          # atributo de instancia
